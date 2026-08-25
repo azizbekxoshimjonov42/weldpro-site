@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WeldPro — Payvandlash mahsulotlari</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <header>
+        <div class="logo">WELD<span>PRO</span></div>
+
+        <nav>
+            <a href="#home" data-uz="Bosh sahifa"
+               data-ru="Главная"
+               data-en="Home"
+               data-zh="首页">Bosh sahifa</a>
+
+            <a href="#catalog" data-uz="Katalog"
+               data-ru="Каталог"
+               data-en="Catalog"
+               data-zh="产品目录">Katalog</a>
+
+            <a href="#contact" data-uz="Aloqa"
+               data-ru="Контакты"
+               data-en="Contact"
+               data-zh="联系我们">Aloqa</a>
+        </nav>
+
+        <div class="languages">
+            <button onclick="changeLanguage('uz')">UZ</button>
+            <button onclick="changeLanguage('ru')">RU</button>
+            <button onclick="changeLanguage('en')">EN</button>
+            <button onclick="changeLanguage('zh')">中文</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <p class="label"
+               data-uz="Professional payvandlash mahsulotlari"
+               data-ru="Профессиональные сварочные товары"
+               data-en="Professional welding products"
+               data-zh="专业焊接产品">
+                Professional payvandlash mahsulotlari
+            </p>
+
+            <h1 data-uz="Ishonchli payvandlash mahsulotlari"
+                data-ru="Надёжные товары для сварки"
+                data-en="Reliable welding products"
+                data-zh="可靠的焊接产品">
+                Ishonchli payvandlash mahsulotlari
+            </h1>
+
+            <p class="description"
+               data-uz="Kabellar, uchliklar va sarf materiallari."
+               data-ru="Кабели, наконечники и расходные материалы."
+               data-en="Cables, tips and welding consumables."
+               data-zh="焊接电缆、焊嘴和耗材。">
+                Kabellar, uchliklar va sarf materiallari.
+            </p>
+
+            <a class="button" href="#catalog"
+               data-uz="Katalogni ko‘rish"
+               data-ru="Смотреть каталог"
+               data-en="View catalog"
+               data-zh="查看目录">
+                Katalogni ko‘rish
+            </a>
+        </section>
+    </main>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+<section class="catalog" id="catalog">
+    <div class="section-heading">
+        <p data-uz="Mahsulotlar"
+           data-ru="Продукция"
+           data-en="Products"
+           data-zh="产品">
+            Mahsulotlar
+        </p>
+
+        <h2 data-uz="Bizning katalog"
+            data-ru="Наш каталог"
+            data-en="Our catalog"
+            data-zh="我们的产品目录">
+            Bizning katalog
+        </h2>
+    </div>
+
+    <div class="catalog-grid">
+        <article class="product-card">
+            <div class="product-icon">01</div>
+            <h3 data-uz="Payvandlash kabellari"
+                data-ru="Сварочные кабели"
+                data-en="Welding cables"
+                data-zh="焊接电缆">
+                Payvandlash kabellari
+            </h3>
+            <p data-uz="Turli kesim va uzunlikdagi sifatli kabellar."
+               data-ru="Качественные кабели различного сечения и длины."
+               data-en="Quality cables in different sizes and lengths."
+               data-zh="不同规格和长度的高品质电缆。">
+                Turli kesim va uzunlikdagi sifatli kabellar.
+            </p>
+        </article>
+
+        <article class="product-card">
+            <div class="product-icon">02</div>
+            <h3 data-uz="Uchliklar"
+                data-ru="Наконечники"
+                data-en="Welding tips"
+                data-zh="焊嘴">
+                Uchliklar
+            </h3>
+            <p data-uz="Professional ish uchun ishonchli uchliklar."
+               data-ru="Надёжные наконечники для профессиональной работы."
+               data-en="Reliable tips for professional welding."
+               data-zh="适合专业焊接工作的可靠焊嘴。">
+                Professional ish uchun ishonchli uchliklar.
+            </p>
+        </article>
+
+        <article class="product-card">
+            <div class="product-icon">03</div>
+       <h3 data-uz="Mis qalpoqchalar"
+    data-ru="Медные колпачки"
+    data-en="Copper caps"
+    data-zh="铜帽">
+    Mis qalpoqchalar
+</h3>
+            <p data-uz="Sifatli misdan tayyorlangan kontakt qalpoqchalari."
+   data-ru="Контактные колпачки из качественной меди."
+   data-en="Contact caps made from high-quality copper."
+   data-zh="采用优质铜材制成的接触帽。">
+    Sifatli misdan tayyorlangan kontakt qalpoqchalari.
+</p>
+        </article>
+
+        <article class="product-card">
+            <div class="product-icon">04</div>
+    <h3 data-uz="Mis komponentlari"
+    data-ru="Медные компоненты"
+    data-en="Copper components"
+    data-zh="铜制部件">
+    Mis komponentlari
+</h3>
+            <p data-uz="Turli shakl va o‘lchamdagi mustahkam mis komponentlari."
+   data-ru="Прочные медные компоненты разных форм и размеров."
+   data-en="Durable copper components in various shapes and sizes."
+   data-zh="不同形状和尺寸的耐用铜制部件。">
+    Turli shakl va o‘lchamdagi mustahkam mis komponentlari.
+</p>
+        </article>
+
+        <article class="product-card">
+            <div class="product-icon">05</div>
+           <h3 data-uz="Mis tirsaklar"
+    data-ru="Медные колена"
+    data-en="Copper elbows"
+    data-zh="铜弯头">
+    Mis tirsaklar
+</h3>
+         <p data-uz="Texnik talablar asosida tayyorlangan mis tirsaklar."
+   data-ru="Медные колена, изготовленные по техническим требованиям."
+   data-en="Copper elbows manufactured to technical requirements."
+   data-zh="按照技术要求制造的铜弯头。">
+    Texnik talablar asosida tayyorlangan mis tirsaklar.
+</p>
+        </article>
+
+        <article class="product-card">
+            <div class="product-icon">06</div>
+            <h3 data-uz="Mis ulagichlar"
+    data-ru="Медные соединители"
+    data-en="Copper connectors"
+    data-zh="铜连接器">
+    Mis ulagichlar
+</h3>
+            <p data-uz="Yuqori tok uchun moslashuvchan mis ulagichlar."
+   data-ru="Гибкие медные соединители для высокого тока."
+   data-en="Flexible copper connectors for high-current applications."
+   data-zh="适用于大电流应用的柔性铜连接器。">
+    Yuqori tok uchun moslashuvchan mis ulagichlar.
+</p>
+        </article>
+    </div>
+</section>
+</main>
+<section class="process" id="process">
+    <div class="section-heading">
+        <p data-uz="Ish jarayoni"
+           data-ru="Процесс работы"
+           data-en="Work process"
+           data-zh="工作流程">
+            Ish jarayoni
+        </p>
+
+        <h2 data-uz="Qanday buyurtma berish mumkin?"
+            data-ru="Как сделать заказ?"
+            data-en="How to place an order?"
+            data-zh="如何下单？">
+            Qanday buyurtma berish mumkin?
+        </h2>
+    </div>
+
+    <div class="process-grid">
+        <article class="process-card">
+            <span>01</span>
+            <h3 data-uz="Mahsulotni tanlang"
+                data-ru="Выберите товар"
+                data-en="Choose a product"
+                data-zh="选择产品">
+                Mahsulotni tanlang
+            </h3>
+        </article>
+
+        <article class="process-card">
+            <span>02</span>
+            <h3 data-uz="Biz bilan bog‘laning"
+                data-ru="Свяжитесь с нами"
+                data-en="Contact us"
+                data-zh="联系我们">
+                Biz bilan bog‘laning
+            </h3>
+        </article>
+
+        <article class="process-card">
+            <span>03</span>
+            <h3 data-uz="Buyurtmani tasdiqlang"
+                data-ru="Подтвердите заказ"
+                data-en="Confirm your order"
+                data-zh="确认订单">
+                Buyurtmani tasdiqlang
+            </h3>
+        </article>
+
+        <article class="process-card">
+            <span>04</span>
+            <h3 data-uz="Mahsulotni oling"
+                data-ru="Получите товар"
+                data-en="Receive your product"
+                data-zh="接收产品">
+                Mahsulotni oling
+            </h3>
+        </article>
+    </div>
+</section>
+</main>
+<section class="advantages">
+    <div class="advantages-info">
+        <p class="small-title"
+           data-uz="Nega WeldPro?"
+           data-ru="Почему WeldPro?"
+           data-en="Why WeldPro?"
+           data-zh="为什么选择 WeldPro？">
+            Nega WeldPro?
+        </p>
+
+        <h2 data-uz="Sifat, tezlik va ishonch"
+            data-ru="Качество, скорость и надёжность"
+            data-en="Quality, speed and reliability"
+            data-zh="品质、速度与可靠性">
+            Sifat, tezlik va ishonch
+        </h2>
+
+        <p class="advantages-text"
+           data-uz="Professional payvandlash uchun tekshirilgan mahsulotlarni taklif qilamiz."
+           data-ru="Предлагаем проверенные товары для профессиональной сварки."
+           data-en="We offer trusted products for professional welding."
+           data-zh="我们提供值得信赖的专业焊接产品。">
+            Professional payvandlash uchun tekshirilgan mahsulotlarni taklif qilamiz.
+        </p>
+    </div>
+
+    <div class="advantages-grid">
+        <article>
+            <strong>100%</strong>
+            <p data-uz="Sifat nazorati"
+               data-ru="Контроль качества"
+               data-en="Quality control"
+               data-zh="质量控制">
+                Sifat nazorati
+            </p>
+        </article>
+
+        <article>
+            <strong>24/7</strong>
+            <p data-uz="Buyurtma qabul qilish"
+               data-ru="Приём заказов"
+               data-en="Order acceptance"
+               data-zh="全天候接受订单">
+                Buyurtma qabul qilish
+            </p>
+        </article>
+
+        <article>
+            <strong>500+</strong>
+            <p data-uz="Mamnun mijozlar"
+               data-ru="Довольных клиентов"
+               data-en="Satisfied customers"
+               data-zh="满意客户">
+                Mamnun mijozlar
+            </p>
+        </article>
+    </div>
+</section>
+</main>
+<section class="faq">
+    <div class="section-heading">
+        <p data-uz="Savollar"
+           data-ru="Вопросы"
+           data-en="Questions"
+           data-zh="常见问题">
+            Savollar
+        </p>
+
+        <h2 data-uz="Ko‘p beriladigan savollar"
+            data-ru="Частые вопросы"
+            data-en="Frequently asked questions"
+            data-zh="常见问题解答">
+            Ko‘p beriladigan savollar
+        </h2>
+    </div>
+
+    <div class="faq-list">
+        <details>
+            <summary data-uz="Mahsulotlar doim mavjudmi?"
+                     data-ru="Товары всегда есть в наличии?"
+                     data-en="Are products always in stock?"
+                     data-zh="产品一直有库存吗？">
+                Mahsulotlar doim mavjudmi?
+            </summary>
+
+            <p data-uz="Mavjudlik buyurtma berishdan oldin aniqlashtiriladi."
+               data-ru="Наличие уточняется перед оформлением заказа."
+               data-en="Availability is confirmed before placing an order."
+               data-zh="下单前我们会确认库存情况。">
+                Mavjudlik buyurtma berishdan oldin aniqlashtiriladi.
+            </p>
+        </details>
+
+        <details>
+            <summary data-uz="Yetkazib berish mavjudmi?"
+                     data-ru="Есть ли доставка?"
+                     data-en="Is delivery available?"
+                     data-zh="可以配送吗？">
+                Yetkazib berish mavjudmi?
+            </summary>
+
+            <p data-uz="Yetkazib berish shartlari manzil va buyurtmaga bog‘liq."
+               data-ru="Условия доставки зависят от адреса и заказа."
+               data-en="Delivery conditions depend on the address and order."
+               data-zh="配送条件取决于地址和订单。">
+                Yetkazib berish shartlari manzil va buyurtmaga bog‘liq.
+            </p>
+        </details>
+
+        <details>
+            <summary data-uz="Ulgurji buyurtma berish mumkinmi?"
+                     data-ru="Можно заказать оптом?"
+                     data-en="Can I order wholesale?"
+                     data-zh="可以批量订购吗？">
+                Ulgurji buyurtma berish mumkinmi?
+            </summary>
+
+            <p data-uz="Ha, ulgurji buyurtmalar uchun alohida shartlar mavjud."
+               data-ru="Да, для оптовых заказов предусмотрены отдельные условия."
+               data-en="Yes, special conditions are available for wholesale orders."
+               data-zh="可以，批量订单享有专属条件。">
+                Ha, ulgurji buyurtmalar uchun alohida shartlar mavjud.
+            </p>
+        </details>
+
+        <details>
+            <summary data-uz="Mahsulot tanlashda yordam berasizmi?"
+                     data-ru="Вы помогаете выбрать товар?"
+                     data-en="Can you help me choose a product?"
+                     data-zh="你们可以帮助选择产品吗？">
+                Mahsulot tanlashda yordam berasizmi?
+            </summary>
+
+            <p data-uz="Ha, mutaxassisimiz mos mahsulotni tanlashga yordam beradi."
+               data-ru="Да, специалист поможет подобрать подходящий товар."
+               data-en="Yes, our specialist will help you select the right product."
+               data-zh="可以，我们的专业人员会帮助您选择合适的产品。">
+                Ha, mutaxassisimiz mos mahsulotni tanlashga yordam beradi.
+            </p>
+        </details>
+    </div>
+</section>
+<section class="contact" id="contact">
+    <div class="section-heading">
+        <p data-uz="ALOQA"
+           data-ru="КОНТАКТЫ"
+           data-en="CONTACTS"
+           data-zh="联系我们">
+            ALOQA
+        </p>
+
+        <h2 data-uz="BIZ BILAN BOG‘LANING"
+            data-ru="СВЯЖИТЕСЬ С НАМИ"
+            data-en="CONTACT US"
+            data-zh="联系我们">
+            BIZ BILAN BOG‘LANING
+        </h2>
+    </div>
+
+    <div class="contact-grid">
+        <a class="contact-card" href="tel:+998916120120">
+            <span>01</span>
+            <h3 data-uz="Telefon"
+                data-ru="Телефон"
+                data-en="Phone"
+                data-zh="电话">Telefon</h3>
+            <p>+998 91 612 01 20</p>
+        </a>
+
+        <a class="contact-card" href="mailto:azizbekxoshimjonov42@gmail.com">
+            <span>02</span>
+            <h3>Email</h3>
+            <p>azizbekxoshimjonov42@gmail.com</p>
+        </a>
+
+        <div class="contact-card">
+            <span>03</span>
+            <h3 data-uz="Manzil"
+                data-ru="Адрес"
+                data-en="Address"
+                data-zh="地址">Manzil</h3>
+            <p data-uz="Andijon viloyati, Andijon tumani, Chem MFY, Asaka yo‘li ko‘chasi, 598-uy"
+               data-ru="Андижанская область, Андижанский район, МСГ Чем, улица Асака йули, дом 598"
+               data-en="598 Asaka Yoli Street, Chem, Andijan District, Andijan Region"
+               data-zh="安集延州安集延区 Chem，Asaka Yoli 街598号">
+                Andijon viloyati, Andijon tumani, Chem MFY, Asaka yo‘li ko‘chasi, 598-uy
+            </p>
+        </div>
+
+        <div class="contact-card">
+            <span>04</span>
+            <h3 data-uz="Ish vaqti"
+                data-ru="Режим работы"
+                data-en="Working hours"
+                data-zh="工作时间">Ish vaqti</h3>
+            <p>24/7</p>
+        </div>
+    </div>
+</section>
+
+</main>
+</body><button class="cart-button" id="cartButton" type="button">
+    🛒
+    <span data-uz="Savat" data-ru="Корзина"
+          data-en="Cart" data-zh="购物车">Savat</span>
+    <b id="cartCount">0</b>
+</button>
+
+<div class="cart-overlay" id="cartOverlay"></div>
+
+<aside class="cart-panel" id="cartPanel">
+    <div class="cart-header">
+        <h2 data-uz="Savat" data-ru="Корзина"
+            data-en="Cart" data-zh="购物车">Savat</h2>
+
+        <button id="cartClose" type="button">×</button>
+    </div>
+
+    <div class="cart-items" id="cartItems"></div>
+
+    <p class="cart-empty" id="cartEmpty"
+       data-uz="Savat hozircha bo‘sh."
+       data-ru="Корзина пока пуста."
+       data-en="Your cart is empty."
+       data-zh="购物车是空的。">
+        Savat hozircha bo‘sh.
+    </p>
+
+    <div class="cart-footer">
+        <p>
+            <span data-uz="Jami mahsulot:"
+                  data-ru="Всего товаров:"
+                  data-en="Total items:"
+                  data-zh="商品总数：">
+                Jami mahsulot:
+            </span>
+            <strong id="cartTotal">0</strong>
+        </p>
+
+        <a class="cart-order" id="cartOrder"
+           href="tel:+998916120120"
+           data-uz="Buyurtma berish"
+           data-ru="Оформить заказ"
+           data-en="Place an order"
+           data-zh="提交订单">
+            Buyurtma berish
+        </a>
+    </div>
+</aside>
+</html>
